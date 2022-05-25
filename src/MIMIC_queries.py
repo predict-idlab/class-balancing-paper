@@ -107,7 +107,7 @@ def get_general_info(subject_id : int, hadm_id : int,
     return res
 
 
-def verify_carevue_metavision(l : list[str]) -> bool:
+def verify_carevue_metavision(l : list) -> bool:
     '''
     Function to check if each feature list has terms from both carevue and metavision database. 
     (MIMIC III has a combination of the two icu databases and they have different codes for each labs)
@@ -201,10 +201,10 @@ def get_itemid_from_features(d_items_csv : str = "../Data/MIMIC/D_ITEMS.csv") ->
 
     return item_ids
 
-def get_all_labs(list_icu_id : list[int], 
+def get_all_labs(list_icu_id : list, 
                  feature_dict : dict,
                  csv_file : str = "../Data/MIMIC/CHARTEVENTS.csv",
-                 usecols : list[str] = ['ICUSTAY_ID','ITEMID','VALUE','VALUENUM','VALUEUOM'],
+                 usecols : list= ['ICUSTAY_ID','ITEMID','VALUE','VALUENUM','VALUEUOM'],
                  dtype : dict = {"ICUSTAY_ID":'float64','ITEMID':'float64','VALUE':'object','VALUENUM':'float64','VALUEUOM':'object'},
                  output_file : str = "../gen/reduced_chartevents.csv") -> pd.DataFrame:
     """
@@ -228,7 +228,7 @@ def get_all_labs(list_icu_id : list[int],
     charts.to_csv(output_file)
     return charts
 
-def get_lab_info(list_icu_id : list[int], charts_panda_file : pd.DataFrame, d_items_csv : str = "../Data/MIMIC/D_ITEMS.csv"):
+def get_lab_info(list_icu_id : list, charts_panda_file : pd.DataFrame, d_items_csv : str = "../Data/MIMIC/D_ITEMS.csv"):
     '''
     get lab info for a single patient's icu 'icu_id' from labs_csv 
     list_icu_ids: list of icu stays of one patient 
