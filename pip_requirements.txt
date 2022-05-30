@@ -4,3 +4,5 @@ numpy
 dask
 sklearn
 tqdm
+shap
+imlearn
