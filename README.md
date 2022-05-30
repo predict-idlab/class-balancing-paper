@@ -1,4 +1,4 @@
-# class-balancing
+# Perfectly predicting ICU length of stay: too good to be true
 Code to reproduce [1]. See commentary[2]. Expected folder structure is as follows: \
   . \
   |-Data \
