@@ -14,7 +14,7 @@ Code to reproduce [1]. See commentary[2]. Expected folder structure is as follow
   |  |- \
   |-src \
   |  |-MIMIC_queries.py \
-  |  |-Reproduction.ipynb \
+  |  |-Reproduction.ipynb 
 ## Data
   The MIMIC III dataset has to downloaded independently due to licensing. See https://mimic.mit.edu/docs/gettingstarted/ to get access. Extract the csv to   the Data/MIMIC folder.
 ## Usage
