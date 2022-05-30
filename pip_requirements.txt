@@ -1,6 +1,0 @@
-jupyter
-pandas
-numpy
-dask
-sklearn
-tqdm
