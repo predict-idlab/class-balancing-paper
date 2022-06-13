@@ -22,5 +22,5 @@ Code to reproduce [1]. See commentary[2]. Expected folder structure is as follow
   Run Reproduction.ipynb in jupyter step by step
 ## References
   [1]. Alsinglawi, B., Alshari, O., Alorjani, M. et al. An explainable machine learning framework for lung cancer hospital length of stay prediction. Sci Rep 12, 607 (2022). https://doi.org/10.1038/s41598-021-04608-7 \
-  [2]. 
+  [2]. Placeholder for paper
     
